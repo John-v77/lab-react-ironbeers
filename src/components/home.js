@@ -4,7 +4,8 @@ import React from 'react';
 function Home(props) {
     return (
         <div>
-            <img src={logo} alt="Logo" />
+            Home
+            {/* <img src={logo} alt="Logo" /> */}
         </div>
     );
 }

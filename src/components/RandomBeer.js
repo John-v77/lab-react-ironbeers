@@ -9,14 +9,23 @@ function RandomBeer(props) {
 
     useEffect( () => {
     axios.get('https://ih-beers-api2.herokuapp.com/beers/random')
-    .then(dataBeer =>{
-        setRandomBeer(dataBeer.data)
+    .then(res =>{
+        setRandomBeer(res.data)
     })
 }, [])
 
+const styleRandom={
+    width:'100px'
+}
+
     return (
         <div>
-            {randomBeer}
+            <div>
+            <img style={styleRandom} src={randomBeer.image_url}/>
+        </div>
+            <div>
+                {randomBeer.name}
+            </div>
         </div>
     );
 }
