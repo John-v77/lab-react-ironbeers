@@ -3,21 +3,28 @@ import axios from 'axios';
 
 function BeerDetails(props) {
     console.log(props)
-    let [newBeer, setNewBeer] = useState([])
+    let [beer, setBeer] = useState([])
 
 
 useEffect(() => {
     axios.get(`https://ih-beers-api2.herokuapp.com/beers/`)
     .then(dataBeer1 =>{
         console.log(dataBeer1)
-        setNewBeer(dataBeer1.data)})
+        setBeer(dataBeer1.data)})
     
     }, [])
 
     console.log(props.match)
     return (
         <div>
-            {setNewBeer}
+            <img style={{height:'200px', width:'120px'}} src={beer.image_url} alt=""/>
+            {beer.name},
+            {beer.name},
+            {beer.tagline},
+            {beer.first_brewed},
+            {beer.attenuation_level},
+            {beer.description}
+            {beer.contributed_by}
         </div>
     );
 }

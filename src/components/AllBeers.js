@@ -36,7 +36,7 @@ function AllBeers(props) {
     }
     
     const styleAllItems={
-        marginLeft:"30vw",
+        marginLeft:"22.5vw",
         width:"55vw",
         backgroundColor:"white",
         display: 'flex',

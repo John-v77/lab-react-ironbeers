@@ -19,12 +19,15 @@ const styleRandom={
 }
 
     return (
-        <div>
+        <div style={{width:'50vw', backgroundColor:'white', marginLeft:'25vw', paddingTop:'80px'}}>
             <div>
             <img style={styleRandom} src={randomBeer.image_url}/>
-        </div>
-            <div>
-                {randomBeer.name}
+            <h2>{randomBeer.name}</h2>
+            <p>{randomBeer.tagline}</p>
+            <p>{randomBeer.first_brewed}</p>
+            <p>{randomBeer.attenuation_level}</p>
+            <p>{randomBeer.description}</p>
+            <p>{randomBeer.contributed_by}</p>
             </div>
         </div>
     );
