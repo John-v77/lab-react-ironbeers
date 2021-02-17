@@ -26,28 +26,39 @@ function AllBeers(props) {
         return(
         <div style={styleAllItems}>
             <img style={{height:'100px', width:'60px'}} src={eachBeer.image_url} alt=""/>
-            <Link to={`/allbeers/${eachBeer._id}`}>{eachBeer.name}</Link>
-            <li>{eachBeer.tagline}</li>
-            <li>{eachBeer.contributed_by}</li>
-            <div style={{height:'60px'}}></div>
+            <div style={styleDetails}>
+                <Link to={`/allbeers/${eachBeer._id}`}>{eachBeer.name}</Link>
+                <li>{eachBeer.tagline}</li>
+                <li>{eachBeer.contributed_by}</li>
+                <div style={{height:'60px'}}></div>
+            </div>
             
          </div>  )})
          
     }
     
     const styleAllItems={
-        marginLeft:"22.5vw",
-        width:"55vw",
+        padding:'20px',
+        marginLeft:"25vw",
+        width:"50vw",
         backgroundColor:"white",
+        display:'flex',
+        alignItems: "center",
+        borderBottom: '2px solid lightgrey'
+    }
+
+    const styleDetails={
+        justifyText: "justify",
+        padding:'20px',
         display: 'flex',
         flexDirection: 'column',
         listStyle: 'none',
-        alignItems: "center",
+        alignItems: "center"
+        
     }
 
     return (
         <div>
-            Wiki Beers
             {showBeers()}
         </div>
     );

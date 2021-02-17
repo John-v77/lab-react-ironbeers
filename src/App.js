@@ -13,7 +13,8 @@ import IronRest from './components/IronRest';
 
 function App() {
   return (
-    <div className="App" style={{width:'55vw'}}>
+    <div className="App">
+    {/* <RandomBeer/> */}
       <NavBar />
       <Switch>
         <Route exact path="/" render={(props) => <Home {...props} />}/>
