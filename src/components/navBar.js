@@ -12,17 +12,18 @@ function NavBar(props) {
             textDecoration: 'none',
             display: 'flex',
             justifyContent: 'space-around',
-            alignItems: 'center'
+            alignItems: 'center',
+            // marginLeft:'22.5vw'
     }
 
     return (
-        <div>
-             <div class="glyphicon glyphicon-home" style={{backgroundColor: '#3DC4FC', height: '50px'}}></div>
+        <div style={{marginLeft:'23vw'}}>
+             <div style={{backgroundColor: '#3DC4FC', height: '50px'}}></div>
             <nav style={styleNav}>
                 <Link style={{color:"white", textDecoration:"none"}}to="/">Home</Link>
-                <Link style={{color:"white", textDecoration:"none"}}to="AllBeers">All Beers</Link>
-                <Link style={{color:"white", textDecoration:"none"}}to="RandomBeer">Random Beer</Link>
-                <Link style={{color:"white", textDecoration:"none"}}to="NewBeer">New Beer</Link>
+                <Link style={{color:"white", textDecoration:"none"}}to="/AllBeers">All Beers</Link>
+                <Link style={{color:"white", textDecoration:"none"}}to="/RandomBeer">Random Beer</Link>
+                <Link style={{color:"white", textDecoration:"none"}}to="/NewBeer">New Beer</Link>
             </nav>
         </div>
     );

@@ -16,8 +16,8 @@ function NewBeer(props) {
         })
     }
 
-    function updateForm(e,t){
-        setNewBeer({...newBeer, [e.taget.id]: e.taget.value});
+    function updateForm(e){
+        setNewBeer({...newBeer, [e.target.name]: e.target.value});
     }
     console.log('Data is', newBeer);
 
@@ -26,25 +26,25 @@ function NewBeer(props) {
            <form onSubmit={submitForm} style={{display:'flex', flexDirection:'column', alignItems:'center'}} >
 
                 <label for="name">Name</label>
-                <input type="text" id="name" onChange={updateForm}></input>
+                <input name="name" onChange={updateForm} type="text"  ></input>
 
                 <label for="tagline">Tagline</label>
-                <input type="text" id="tagline" onChange={updateForm}></input>
+                <input onChange={updateForm} type="text" name="tagline" ></input>
 
                 <label for="description">Description</label>
-                <input type="text" id="description" onChange={updateForm}></input>
+                <input onChange={updateForm} type="text" name="description" ></input>
 
                 <label for="first_brewed">First Brewed</label>
-                <input type="text" id="first_brewed" onChange={updateForm}></input>
+                <input onChange={updateForm} type="text" name="first_brewed" ></input>
 
                 <label for="brewer_tips">Brewer Tips</label>
-                <input type="text" id="brewer_tips" onChange={updateForm}></input>
+                <input onChange={updateForm} type="text" name="brewer_tips" ></input>
 
                 <label for="attenuation_level">attenuation_level</label>
-                <input type="text" id="attenuation_level" onChange={updateForm}></input>
+                <input onChange={updateForm} type="text" name="attenuation_level" ></input>
 
                 <label for="contributed_by">Contributed By</label>
-                <input type="text" id="contributed_by" onChange={updateForm}></input>
+                <input onChange={updateForm} type="text" name="contributed_by" ></input>
 
                 <button type='submit'>Create new beer!</button>
            </form>
