@@ -25,7 +25,7 @@ function AllBeers(props) {
     
         return(
         <div style={styleAllItems}>
-            <img style={{height:'100px', width:'60px'}} src={eachBeer.image_url} alt=""/>
+            <img style={{height:'100px', width:'60px', marginLeft:"40px" }} src={eachBeer.image_url} alt=""/>
             <div style={styleDetails}>
                 <Link to={`/allbeers/${eachBeer._id}`}>{eachBeer.name}</Link>
                 <li>{eachBeer.tagline}</li>
@@ -40,7 +40,7 @@ function AllBeers(props) {
     const styleAllItems={
         padding:'20px',
         marginLeft:"25vw",
-        width:"50vw",
+        width:"47.9vw",
         backgroundColor:"white",
         display:'flex',
         alignItems: "center",

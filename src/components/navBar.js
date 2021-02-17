@@ -12,12 +12,13 @@ function NavBar(props) {
             textDecoration: 'none',
             display: 'flex',
             justifyContent: 'space-around',
-            alignItems: 'center'
+            alignItems: 'center',
+            width:'50vw',
+            marginLeft:'25vw'
     }
 
     return (
         <div>
-             <div class="glyphicon glyphicon-home" style={{backgroundColor: '#3DC4FC', height: '50px'}}></div>
             <nav style={styleNav}>
                 <Link style={{color:"white", textDecoration:"none"}}to="/">Home</Link>
                 <Link style={{color:"white", textDecoration:"none"}}to="AllBeers">All Beers</Link>
