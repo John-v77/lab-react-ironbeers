@@ -17,15 +17,14 @@ useEffect(() => {
 
     // console.log(props.match)
     return (
-        <div>
+        <div style={{width:'50vw', backgroundColor:'white', marginLeft:'25vw', paddingTop:'80px', minHeight:'100vh'}}>
             <img style={{height:'200px', width:'120px'}} src={beer.image_url} alt=""/>
-            {beer.name},
-            {beer.name},
-            {beer.tagline},
-            {beer.first_brewed},
-            {beer.attenuation_level},
-            {beer.description}
-            {beer.contributed_by}
+            <h2>{beer.name}</h2>
+            <p>{beer.tagline}</p>
+            <p>{beer.first_brewed}</p>
+            <p>{beer.attenuation_level}</p>
+            <p>{beer.description}</p>
+            <p>{beer.contributed_by}</p>
         </div>
     );
 }

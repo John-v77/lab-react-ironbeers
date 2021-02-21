@@ -22,7 +22,7 @@ function NewBeer(props) {
     console.log('Data is', newBeer);
 
     return (
-        <div style={{width:'50vw', backgroundColor:'white', marginLeft:'25vw', paddingTop:'40px'}}>
+        <div style={{width:'50vw', backgroundColor:'white', marginLeft:'25vw', paddingTop:'40px', minHeight:"100vh"}}>
            <form onSubmit={submitForm} style={{display:'flex', flexDirection:'column', alignItems:'center'}} >
 
                 <label for="name">Name</label>

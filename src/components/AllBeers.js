@@ -25,10 +25,10 @@ function AllBeers(props) {
     
         return(
         <div style={styleAllItems}>
-            <img style={{height:'100px', width:'60px', marginLeft:"40px" }} src={eachBeer.image_url} alt=""/>
+            <img style={{height:'120px', width:'70px', marginLeft:"40px" }} src={eachBeer.image_url} alt=""/>
             <div style={styleDetails}>
-                <Link to={`/allbeers/${eachBeer._id}`}>{eachBeer.name}</Link>
-                <li>{eachBeer.tagline}</li>
+                <Link to={`/allbeers/${eachBeer._id}`} style={{color:'black'}}><h3>{eachBeer.name}</h3></Link>
+                <li style={{width:'20vw', textJustify:'justify'}}>{eachBeer.tagline}</li>
                 <li>{eachBeer.contributed_by}</li>
                 <div style={{height:'60px'}}></div>
             </div>
@@ -48,7 +48,8 @@ function AllBeers(props) {
     }
 
     const styleDetails={
-        justifyText: "justify",
+        
+        justifyText: "left",
         padding:'20px',
         display: 'flex',
         flexDirection: 'column',
