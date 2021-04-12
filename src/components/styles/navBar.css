@@ -1,0 +1,28 @@
+.styleNav{
+    height: 7vh;
+    width: 50vw;
+    margin-left: 25vw;
+    background-color: #3DC4FC;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+/* 
+styleNav={
+    height:"50px",
+    backgroundColor: '#3DC4FC',
+    color: 'white',
+    fontSize: '1.5em',
+    fontWeight: '400',
+    textDecoration: 'none',
+    display: 'flex',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    width:'50vw',
+    marginLeft:'25vw' */
