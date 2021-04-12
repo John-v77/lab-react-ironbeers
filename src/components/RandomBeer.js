@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import './styles/beerDetails.css';
 
 
 function RandomBeer(props) {
@@ -19,16 +20,14 @@ const styleRandom={
 }
 
     return (
-        <div style={{width:'50vw', backgroundColor:'white', marginLeft:'25vw', paddingTop:'80px', minHeight:'100vh'}}>
-            <div>
-            <img style={styleRandom} src={randomBeer.image_url}/>
+        <div className='beer-details'>
+            <img className='beer-details-img' src={randomBeer.image_url} alt=""/>
             <h2>{randomBeer.name}</h2>
             <p>{randomBeer.tagline}</p>
-            <p>{randomBeer.first_brewed}</p>
-            <p>{randomBeer.attenuation_level}</p>
-            <p>{randomBeer.description}</p>
-            <p>{randomBeer.contributed_by}</p>
-            </div>
+            <p>first brewed: {randomBeer.first_brewed}</p>
+            <p>Attenuation Level: {randomBeer.attenuation_level}</p>
+            <p className='beer-description'>{randomBeer.description}</p>
+            <p>contributed by: {randomBeer.contributed_by}</p>
         </div>
     );
 }
