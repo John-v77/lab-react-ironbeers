@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+
+beerImg{
+  width:'50vw';
+  background-color:'red';
+  margin-left:'25vw';
+  padding-top:'80px';
+  min-height:'100vh'
+ }

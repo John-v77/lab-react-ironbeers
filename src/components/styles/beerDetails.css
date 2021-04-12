@@ -1,0 +1,21 @@
+
+
+.beer-details{
+    width:50vw;
+    background-color: white;
+    margin-left: 25vw;
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+.beer-details-img{
+    height: 200px;
+    width: 80px;
+}
+
+.Beer-description{
+    padding: 0 2vw;
+    text-align: justify;
+}
+/* <img style={{height:'200px', width:'120px'}} src={beer.image_url} alt=""/> */
+
