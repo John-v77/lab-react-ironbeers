@@ -1,0 +1,29 @@
+.allItems{
+    padding-top:20px;
+    margin-left:25vw;
+    width:50vw;
+    background-color:white;
+    display:flex;
+    align-items: center;
+    border-bottom:  2px solid lightgrey 
+}
+
+.allItems img{
+    height:120px;
+    width:70px;
+    margin-left:40px
+}
+
+.singleItem{
+    text-justify:  left ;
+    padding:5vh 0 0 10vw ;
+    display:  flex ;
+    flex-direction:  column ;
+    list-style:  none ;
+    align-items:  center 
+}
+
+.singleItem li{
+    width:20vw;
+    text-Justify:justify
+}

@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './styles/AllBeers.css';
 
 function AllBeers(props) {
     
@@ -24,11 +25,11 @@ function AllBeers(props) {
         return beers.map(eachBeer => {
     
         return(
-        <div style={styleAllItems}>
-            <img style={{height:'120px', width:'70px', marginLeft:"40px" }} src={eachBeer.image_url} alt=""/>
-            <div style={styleDetails}>
+        <div className='allItems'>
+            <img src={eachBeer.image_url} alt=""/>
+            <div className='singleItem'>
                 <Link to={`/allbeers/${eachBeer._id}`} style={{color:'black'}}><h3>{eachBeer.name}</h3></Link>
-                <li style={{width:'20vw', textJustify:'justify'}}>{eachBeer.tagline}</li>
+                <li>{eachBeer.tagline}</li>
                 <li>{eachBeer.contributed_by}</li>
                 <div style={{height:'60px'}}></div>
             </div>

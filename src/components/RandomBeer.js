@@ -7,17 +7,13 @@ function RandomBeer(props) {
 
     let [randomBeer, setRandomBeer] = useState([])
 
-
+    //random API
     useEffect( () => {
     axios.get('https://ih-beers-api2.herokuapp.com/beers/random')
     .then(res =>{
         setRandomBeer(res.data)
     })
 }, [])
-
-const styleRandom={
-    width:'100px'
-}
 
     return (
         <div className='beer-details'>
