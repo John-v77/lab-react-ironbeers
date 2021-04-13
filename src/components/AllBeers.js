@@ -21,43 +21,20 @@ function AllBeers(props) {
     console.log(beers)
 
     const showBeers = () => {
-        
         return beers.map(eachBeer => {
-    
-        return(
-        <div className='allItems'>
-            <img src={eachBeer.image_url} alt=""/>
-            <div className='singleItem'>
-                <Link to={`/allbeers/${eachBeer._id}`} style={{color:'black'}}><h3>{eachBeer.name}</h3></Link>
-                <li>{eachBeer.tagline}</li>
-                <li>{eachBeer.contributed_by}</li>
-                <div style={{height:'60px'}}></div>
-            </div>
-            
-         </div>  )})
-         
+            return(
+            <div className='allItems'>
+                <img src={eachBeer.image_url} alt=""/>
+                <div className='singleItem'>
+                    <Link to={`/allbeers/${eachBeer._id}`} style={{color:'black'}}><h3>{eachBeer.name}</h3></Link>
+                    <li>{eachBeer.tagline}</li>
+                    <li>{eachBeer.contributed_by}</li>
+                    
+                </div>
+                
+            </div>  )})
     }
     
-    const styleAllItems={
-        padding:'20px',
-        marginLeft:"25vw",
-        width:"47.9vw",
-        backgroundColor:"white",
-        display:'flex',
-        alignItems: "center",
-        borderBottom: '2px solid lightgrey'
-    }
-
-    const styleDetails={
-        
-        justifyText: "left",
-        padding:'20px',
-        display: 'flex',
-        flexDirection: 'column',
-        listStyle: 'none',
-        alignItems: "center"
-        
-    }
 
     return (
         <div>
